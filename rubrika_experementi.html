@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспайроментс</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="df">
+            
+        </div>
+        <div class="df">
+            
+        </div>
+        <div class="df">
+            
+        </div>
+        <div class="df">
+            
+        </div>
+        <div class="df">
+            
+        </div>
+        <div class="df">
+            
+        </div>
+    </div>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            height: 1000px;
+        }
+        .df{
+            width: 20%;
+            height: 20%;
+            border: black 1px solid;
+        }
+        .circle{
+            border-radius: 50%;
+            width: 20%;
+            height: 20%;
+            border: 2px red solid;
+            background-color: rgb(165, 168, 204);
+            margin: 5px;
+        }
+        .df{
+            display: flex;
+        }
+        .df:nth-child(1){
+            justify-content: center;
+            justify-content: space-between;
+        }
+        .df:nth-child(2){
+            justify-content: center;
+            align-items: center;
+        }
+        .df:nth-child(3){
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .df:nth-child(4){
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .df:nth-child(4) .circle:nth-child(2){
+            align-self: center;
+        }
+        .df:nth-child(4) .circle:nth-child(3){
+            align-self: end;
+        }
+        .df:nth-child(5){
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .df:nth-child(6){
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .df:nth-child(7){
+            flex-direction: column-reverse;
+        }
+        .df:nth-child(8){
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+        }
+        .df:nth-child(9){
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            justify-content: space-between;
+        }
+        .df:nth-child(10){
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .df:nth-child(10) .circle:nth-child(4){
+            align-self: flex-end;
+        }
+        .df:nth-child(10) .circle:nth-child(5){
+            align-self: flex-end;    
+        }
+        .df:nth-child(10) .circle:nth-child(2){
+            margin-top: 80px; 
+        }
+        .df:nth-child(11){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .df:nth-child(11) .circle:nth-child(1){
+            margin-right: 50%;   
+        }
+        .df:nth-child(11) .circle:nth-child(4){
+            margin-left: 50%;
+            margin-top: 100px;
+        }
+        .df:nth-child(11) .circle:nth-child(3){
+            margin-top: 100px;
+        }
+        .df:nth-child(12){
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-content: space-between;
+        }
+        .df:nth-child(13){
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: center;
+        }
+        .df:nth-child(13) .circle:nth-child(1){
+            margin-left: 50%;
+        }
+        .df:nth-child(14){
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .df:nth-child(14) .circle:nth-child(2){
+            align-self: center;
+        }
+        .df:nth-child(14) .circle:nth-child(1){
+            align-self: end;
+        }
+        .df:nth-child(15){
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: space-between;
+        }
+        .df:nth-child(16){
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+        }
+        .df:nth-child(17){
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-content: flex-start;
+
+        }
+        .df:nth-child(17) .circle:nth-child(1){
+            margin-right: 10px;
+        }
+        .df:nth-child(18){
+            flex-wrap: wrap;
+        }
+        .df:nth-child(18) .circle:nth-child(1){
+            margin-left: 77%;
+        }
+        .df:nth-child(18) .circle:nth-child(3){
+            margin-left: 52%;
+        }
+        .df:nth-child(19){
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        .df:nth-child(19) .circle:nth-child(2){
+            align-self: center;
+
+        }
+        
+    </style>
+</body>
+</html>
